@@ -1,2 +1,44 @@
+body{
+  margin:0;
+  font-family:Poppins,sans-serif;
+  background:#F2F4F7;
+}
 
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:white;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:15px;
+}
+
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h2{
+  font-size:40px;
+  color:#0D1B2A;
+}
+
+.hero p{
+  color:gray;
+  margin-top:10px;
+}
+
+button{
+  background:#16A34A;
+  color:white;
+  border:none;
+  padding:12px 25px;
+  border-radius:10px;
+  margin-top:20px;
+}
 
