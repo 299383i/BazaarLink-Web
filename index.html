@@ -1,34 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BazaarLink</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-  <h1>BazaarLink</h1>
+  <!-- NAVBAR -->
 
-  <ul>
-    <li>Home</li>
-    <li>Shops</li>
-    <li>Categories</li>
-    <li>Contact</li>
-  </ul>
-</nav>
+  <nav class="navbar">
 
-<section class="hero">
-  <h2>Everything Near You, Delivered Fast</h2>
+    <div class="logo">
+      BazaarLink
+    </div>
 
-  <p>
-    Groceries, Pharmacy, Electronics and more.
-  </p>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>Shops</li>
+      <li>Categories</li>
+      <li>Contact</li>
+    </ul>
 
-  <button>Explore Shops</button>
-</section>
+    <button class="login-btn">
+      Login
+    </button>
 
-<script src="app.js"></script>
+  </nav>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>
+        Everything Near You, Delivered Fast
+      </h1>
+
+      <p>
+        Groceries, Pharmacy, Electronics and more from nearby stores.
+      </p>
+
+      <button class="hero-btn">
+        Explore Shops
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- CATEGORIES -->
+
+  <section class="categories">
+
+    <h2>Categories</h2>
+
+    <div class="category-grid">
+
+      <div class="card">🛒 Grocery</div>
+      <div class="card">💊 Pharmacy</div>
+      <div class="card">📱 Electronics</div>
+      <div class="card">🍞 Bakery</div>
+      <div class="card">👕 Clothing</div>
+      <div class="card">🥩 Meat & Fish</div>
+
+    </div>
+
+  </section>
+
+  <!-- SHOPS -->
+
+  <section class="shops">
+
+    <h2>Nearby Shops</h2>
+
+    <div class="shop-grid">
+
+      <div class="shop-card">
+        <h3>Fresh Mart</h3>
+        <p>Groceries & Daily Needs</p>
+      </div>
+
+      <div class="shop-card">
+        <h3>City Pharmacy</h3>
+        <p>Medicines & Healthcare</p>
+      </div>
+
+      <div class="shop-card">
+        <h3>Tech World</h3>
+        <p>Electronics & Gadgets</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+
+  <section class="products">
+
+    <h2>Popular Products</h2>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1000" alt="">
+
+        <h3>Fresh Vegetables</h3>
+
+        <p>Rs. 450</p>
+
+        <button>Add to Cart</button>
+
+      </div>
+
+      <div class="product-card">
+
+        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=1000" alt="">
+
+        <h3>Medicines Pack</h3>
+
+        <p>Rs. 1200</p>
+
+        <button>Add to Cart</button>
+
+      </div>
+
+      <div class="product-card">
+
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1000" alt="">
+
+        <h3>Smart Phone</h3>
+
+        <p>Rs. 85,000</p>
+
+        <button>Add to Cart</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h3>BazaarLink</h3>
+
+    <p>
+      Fast Delivery From Nearby Shops
+    </p>
+
+  </footer>
+
 </body>
 </html>
