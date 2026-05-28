@@ -44,3 +44,36 @@ async function loadProducts() {
 }
 
  floadProducts();
+const productGrid = document.querySelector(".product-grid");
+
+async function loadProducts() {
+
+  const querySnapshot = await getDocs(collection(db, "products"));
+
+  productGrid.innerHTML = "";
+
+  querySnapshot.forEach((doc) => {
+
+    const product = doc.data();
+
+    productGrid.innerHTML += `
+    
+      <div class="product-card">
+
+        <img src="${product.image}" />
+
+        <h3>${product.name}</h3>
+
+        <p>Rs. ${product.price}</p>
+
+        <button>Add to Cart</button>
+
+      </div>
+
+    `;
+
+  });
+
+}
+
+loadProducts();
