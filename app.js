@@ -22,3 +22,20 @@ console.log("BazaarLink Running");
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
+import {
+  getFirestore,
+  collection,
+  getDocs
+} from "https://www.gstatic.com/firebasejs/12.13.0/firebase-firestore.js";
+
+const db = getFirestore(app);
+
+async function loadProducts() {
+  const querySnapshot = await getDocs(collection(db, "products"));
+
+  querySnapshot.forEach((doc) => {
+    console.log(doc.data());
+  });
+}
+
+loadProducts();
