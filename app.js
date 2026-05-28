@@ -1,3 +1,4 @@
+alert("App JS Working");
 console.log("BazaarLink Running");
 
 // Firebase Imports
