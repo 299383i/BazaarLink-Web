@@ -39,3 +39,4 @@ async function loadProducts() {
 }
 
 loadProducts();
+alert("Firebase Connected");
