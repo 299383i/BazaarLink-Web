@@ -31,19 +31,7 @@ const db = getFirestore(app);
 alert("Firebase Connected Successfully");
 
 // Load Products
-async function loadProducts() {
 
-  const querySnapshot = await getDocs(collection(db, "products"));
-
-  querySnapshot.forEach((doc) => {
-
-    console.log(doc.data());
-
-  });
-
-}
-
- floadProducts();
 const productGrid = document.querySelector(".product-grid");
 
 async function loadProducts() {
