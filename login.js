@@ -39,4 +39,5 @@ window.loginUser = async function () {
 
   }
 
-}m
+}
+window.loginUser = loginUser;
