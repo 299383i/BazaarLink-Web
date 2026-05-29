@@ -27,39 +27,51 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
-// Test Alert
 alert("Firebase Connected Successfully");
 
+// Product Grid
 const productGrid = document.querySelector(".product-grid");
 
+// Load Products
 async function loadProducts() {
 
-  const querySnapshot = await getDocs(collection(db, "products"));
+  try {
 
-  productGrid.innerHTML = "";
+    const querySnapshot = await getDocs(collection(db, "Product"));
 
-  querySnapshot.forEach((doc) => {
+    productGrid.innerHTML = "";
 
-    const product = doc.data();
+    querySnapshot.forEach((doc) => {
 
-    productGrid.innerHTML += `
+      const product = doc.data();
 
-      <div class="product-card">
+      productGrid.innerHTML += `
 
-        <img src="${product.image}" />
+        <div class="product-card">
 
-        <h3>${product.name}</h3>
+          <img src="${product.Image}" alt="Product Image" />
 
-        <p>Rs. ${product.price}</p>
+          <h3>${product.Name}</h3>
 
-        <button>Add to Cart</button>
+          <p>Rs. ${product.Price}</p>
 
-      </div>
+          <button>Add to Cart</button>
 
-    `;
+        </div>
 
-  });
+      `;
+
+    });
+
+  } catch (error) {
+
+    console.log(error);
+
+    alert(error);
+
+  }
 
 }
 
+// Call Function
 loadProducts();
