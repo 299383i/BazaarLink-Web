@@ -30,8 +30,6 @@ const db = getFirestore(app);
 // Test Alert
 alert("Firebase Connected Successfully");
 
-// Load Products
-
 const productGrid = document.querySelector(".product-grid");
 
 async function loadProducts() {
@@ -45,7 +43,7 @@ async function loadProducts() {
     const product = doc.data();
 
     productGrid.innerHTML += `
-    
+
       <div class="product-card">
 
         <img src="${product.image}" />
